@@ -45,11 +45,7 @@ if (data.stream.channel.status == null){
 		}
 
 	});
-    function getUndefined(acct){
-        offline.push(acct);
-        console.log(offline);
-    }
-    
+
 //end new function
 	function addLast(singleAcct, status) {
 		$.getJSON('https://api.twitch.tv/kraken/channels/' + singleAcct + '?callback=?', function (data) {
@@ -68,10 +64,8 @@ if (data.stream.channel.status == null){
 			link = data.url;
 
 			$(".offline").prepend("<a href = '" + link + "'><div class='twitchUser row' id='offline'><img src='http://dishofsoul.com/extfiles/DJIetOL.png' id='offIcon'><div class='col-xs-2' id='logo'><img class='img img-circle' id='image' src='" + logo + "'></div> <div class='col-xs-4'>" + streamName + "</div><div class='truncate'>" + description + "</div></div></a>");
-            }else{
-                offline.push(singleAcct);
-                console.log(offline);
             }
+           
 		});
 
 	}

@@ -1,5 +1,6 @@
 body {
-    background-color: #E5E8B6;
+  
+    background-color: white;
 }
 a:link, a:visited {
     color: black;
@@ -20,7 +21,6 @@ a:link, a:visited {
 	border-color: azure;
 	border-style: solid;
     position: relative;
-/*    border-radius: 10px;*/
     border: 1px;
     border-color: black;
     
